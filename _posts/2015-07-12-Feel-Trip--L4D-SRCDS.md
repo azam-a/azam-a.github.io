@@ -23,7 +23,7 @@ Before being bought by LogMeIn, [Hamachi](https://en.wikipedia.org/wiki/Hamachi_
 
 Using Hamachi, I assigned a static virtual IP for each user in the group. That way, their IP will remain constant and tracking plugins could track their in-game stats.
 
-I installed a few plugins and tweaked some of them to cater for non-legit users. Since legit clients do not have [AuthId](https://sm.alliedmods.net/api/index.php?fastload=show&id=1100), I had to patch the plugins to use [ClientIP](https://sm.alliedmods.net/api/index.php?fastload=show&id=400).
+I installed a few plugins and tweaked some of them to cater for non-legit users. Since non-legit clients do not have [AuthId](https://sm.alliedmods.net/api/index.php?fastload=show&id=1100), I had to patch the plugins to use [ClientIP](https://sm.alliedmods.net/api/index.php?fastload=show&id=400).
 
 ![_config.yml]({{ site.baseurl }}/images/l4d/plugins.png)
 
@@ -47,9 +47,12 @@ Screenshot related to ChatLogEx, I will describe later:
 
 - [ChatLogEx](https://forums.alliedmods.net/showthread.php?p=817310)
 
-I would say that this is one of the best plugins ever. This plugin allows servers to log game events to database (connections, kills, completion, etc). There was a companion web-app written in PHP to output the logged events from the database to web browser. To make things more interactive, I incorporated [Ruckman RCON Source PHP](http://www.ruckman.net/downloads-1), which is a web-based utility for [RCON](https://developer.valvesoftware.com/wiki/Source_RCON_Protocol).
+I would say that this is one of the best plugins ever. This plugin allows servers to log game events to database (connections, kills, completion, etc). There was a companion web-app written in PHP to output the logged events from the database to web browser.
 
-Combined with ChatLogEx, external users could interact with the players currently in-game, using web chats. Messages from the web interface will be displayed in-game, and vice-versa in real-time. Luckily at that time, most players do not have microphones for in-game communications. In L4D, communication is essential, so they tend to use text-based in-game chats a lot. This also allowed me to monitor the game whilst I was away from the machine (office, hometown, etc).
+To make things more interactive, I incorporated [Ruckman RCON Source PHP](http://www.ruckman.net/downloads-1), which is a web-based utility for [RCON](https://developer.valvesoftware.com/wiki/Source_RCON_Protocol).
+Combined with ChatLogEx, external users could interact with the players currently in-game, using web chats. Messages from the web interface will be displayed in-game, and vice-versa in real-time.
+
+Luckily at that time, most players did not have microphones for in-game communications. In L4D, communication is essential, so they tend to use text-based in-game chats a lot. This also allowed me to monitor the game whilst I was away from the machine (office, hometown, etc).
 
 Some screenies for feel trip:
 ![_config.yml]({{ site.baseurl }}/images/l4d/chatlogex-lyn1.png)
