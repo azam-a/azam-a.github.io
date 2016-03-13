@@ -7,7 +7,7 @@ title: Email to Slack Notifier Using Python
 
 In my current team at work, we use [GoCD](https://www.go.cd/) extensively. GoCD is used to compile, test, build, package, and deploy the artefacts to their intended environments. The lifecycle starts with a code check-in to TFS (we use TFS as SCM tool). Respective GoCD pipelines will kickstart automatically to fetch the latest version of the codebase, and it goes through the stages mentioned earlier.
 
-Normally, the GOCD web dashboard is used to monitor the pipeline to see their status whether they are still building, stuck, passed, or failed. However in multi-team environments working on the same product, sometimes it is quite a hassle to constantly check the dashboard if there is any new changes to the codebase, especially for the shared upstream branches. We merge the upstream branch into the feature (team) branch regularly, to make sure that our feature branch also contains the latest version of the codebase.
+Normally, the GoCD web dashboard is used to monitor the pipeline to see their status whether they are still building, stuck, passed, or failed. However in multi-team environments working on the same product, sometimes it is quite a hassle to constantly check the dashboard if there is any new changes to the codebase, especially for the shared upstream branches. We merge the upstream branch into the feature (team) branch regularly, to make sure that our feature branch also contains the latest version of the codebase.
 
 Another place to check is the TFS web dashboard or its clients in Visual Studio for codebase change, but they do not contain the build information as well as the deployment information. And again, it is manual work to check the clients.
 
