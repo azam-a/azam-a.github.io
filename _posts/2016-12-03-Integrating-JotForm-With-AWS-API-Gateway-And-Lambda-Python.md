@@ -49,20 +49,20 @@ logger.setLevel(logging.INFO)
 
 
 def lambda_handler(event, context):
-    logger.info("received Event{}".format(event))
-    decoded_event = event_decoder(event)
+    logger.info("received Event: {}".format(event))
+    decoded_event = decode(event)
     submission_id = extract_submission_id(decoded_event)
     orchestrator.main(submission_id)
 
 
-def event_decoder(event):
+def decode(event):
     bytestring = base64.b64decode(event["body_base64encoded"])
     return bytestring.decode("utf-8")
 
 
 def extract_submission_id(string):
     expression = re.compile(
-    	"name\=\"submissionID\"\\r\\n\\r\\n(\d*)",
+        "name\=\"submissionID\"\\r\\n\\r\\n(\d*)",
         flags=re.UNICODE)
     match = re.search(expression, string)
     return match.group(1)
