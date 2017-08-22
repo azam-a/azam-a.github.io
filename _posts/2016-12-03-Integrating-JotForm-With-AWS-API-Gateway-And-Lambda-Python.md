@@ -5,6 +5,8 @@ title: Integrating JotForm Webhook with AWS API Gateway & Lambda (Python)
 
 tl;dr: JotForm Webhook POSTs as multipart/form-data, which AWS API Gateway & Lambda can't process by default. My workaround - base64 encode at API Gateway, then pass to Lambda.
 
+<!--more-->
+
 Recently I was developing a solution to generate PDFs from an online form. The client uses JotForm, so I guess I could use API Gateway and Lambda to create a maintenance-free, serverless service (function) in the cloud. Moreover, JotForm has built-in Webhook to send the form data anywhere upon submission.
 
 I faced a problem to wire things up end-to-end. From API Gateway logs:

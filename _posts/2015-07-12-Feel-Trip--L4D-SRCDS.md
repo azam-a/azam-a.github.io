@@ -5,6 +5,8 @@ title: Feel Trip - l4d srcds
 
 ![_config.yml]({{ site.baseurl }}/images/l4d/overall.png)
 
+<!--more-->
+
 Something had triggered my emotion this month. It reminds me of 6 years ago. 
 
 I've recently resigned from my previous post this year, and was experiencing the same phase around the same period in 2009.
