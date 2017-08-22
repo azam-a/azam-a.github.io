@@ -4,7 +4,7 @@ title: Indominus Tex - Serverless Pizza Tracker on AWS
 image: /images/pizza_tracker/cloudcraft-codename_domini.png
 ---
 
-![Indominus Tex logo]({{ site.baseurl }}/images/pizza_tracker/indominus_tex_logo.png)
+![Indominus Tex logo]({{ site.baseurl }}/images/pizza_tracker/indominus_tex_logo.png){:height="300px"}
 
 tl;dr: Stack - AWS Lambda (Python 3.6), SimpleDB, Twilio, Flask, Zappa. For tracking Domino's Pizza Malaysia orders.
 
