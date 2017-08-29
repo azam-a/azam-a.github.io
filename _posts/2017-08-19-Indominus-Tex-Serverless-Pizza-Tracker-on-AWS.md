@@ -12,9 +12,9 @@ tl;dr: Stack - AWS Lambda (Python 3.6), SimpleDB, Twilio, Flask, Zappa. For trac
 
 Once every week or two weeks, I order pizza from Domino's. Their website has an order tracker:
 
-![Great Pizza Service (GPS) Tracker]({{ site.baseurl }}/images/pizza_tracker/gps.png)
+![Great Pizza Service (GPS) Tracker]({{ site.baseurl }}/images/pizza_tracker/expired.png)
 
-It is good enough, however after a few minutes of tracking I always encountered session timeout message and the tracker stopped working. If I refresh the page, I had to log in and navigate to the tracker again, which requires more typing and clicking. And the cycle continues.
+It is good enough, however after a few minutes of tracking I always encountered session expired message and the tracker stopped working. If I refresh the page, I had to log in and navigate to the tracker again, which requires more typing and clicking. And the cycle continues.
 
 I noticed that the website does an API call every few seconds to get the order status, and decided to build my own tracker that does not need me to constantly babysit the browser session timing out. The tracker will send an SMS instead.
 
